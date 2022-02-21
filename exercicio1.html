@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio </title>
+</head>
+<body>
+    <p>Clique para saber quais são os números ímpares de 0 a 50.</p>
+    <button onclick="numerosImpares()" id="ni"> clicar</button>
+    <div id="retorno" ></div>
+
+    <script>
+
+
+
+        function numerosImpares () {
+            let resposta = document.getElementById("retorno");
+            let numerosImpares =""
+            
+
+            for(impar = 0; impar <=50; ++impar)
+            if(impar%2 != 0)
+            resposta.innerHTML +=`O resultado é ${impar}<br />`;
+        }
+            
+    </script>
+                
+</body>
+</html>
+                
+              
+
+        
+        
+
+      
+        

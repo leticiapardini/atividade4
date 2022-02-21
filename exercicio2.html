@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <input type="text" id="num" maxlength="2">
+    <button onclick="tabuada()">Exibir Tabuada</button>
+    <p>Tabuada:</p>
+    <div id="resposta"></div>
+    <script>    
+        function tabuada(){
+            
+            let num = (document.getElementById("num").value);
+            let resposta = document.getElementById("resposta");
+            let tabuada = "";
+
+            if (num < 0){
+                alert("Digite um numero positivo");
+                return;
+            }
+
+            if (isNaN(num)){
+                alert("Digite um numero e não uma letra");
+                return;
+            }
+
+            for (let count=1; count<=10; count++){
+                
+                tabuada += num + "x" + count + "=" + (num * count) + "<br />" ;
+            }
+            resposta.innerHTML = tabuada;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+                
+        
+      

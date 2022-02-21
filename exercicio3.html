@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <h3>Lista de Numeros</h3>
+    <p id="lista"></p>
+    <h3> Clique para saber o maior e menor numero da lista</h3>
+    <button onclick="maiorMenor()">clicar</button>
+    <p>O Maior numero da lista é:</p>
+    <div id="retorno1"></div>
+    <p>O menor número da lista é:</p>
+    <div id="retorno2"></div>
+
+   <script>
+       function maiorMenor(){
+        let lista = [1,2,3,4,5,6,2,8,6,1,2];
+        console.log(lista);
+        
+        document.getElementById("lista").innerHTML = lista;
+        document.getElementById("retorno1").innerHTML = (Math.max(...lista));
+    
+        document.getElementById("retorno2").innerHTML=(Math.min(...lista));
+
+       } 
+   </script>
+</body>
+</html>
+    
+    
+       
